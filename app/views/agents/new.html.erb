@@ -1,0 +1,13 @@
+<h1>Submit a New Agent</h1>
+<%= form_for @agent do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true %>
+
+  <%= f.label :phone %>
+  <%= f.text_field :phone, required: true %>
+
+  <%= f.label :email %>
+  <%= f.text_field :email, required: true %>
+
+  <%= f.submit %>
+<% end %>

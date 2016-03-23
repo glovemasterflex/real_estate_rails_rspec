@@ -1,0 +1,23 @@
+<%= form_for [@agent, @home] do |f| %>
+
+	<%= f.label :bed, placeholder: '# of Beds' %>
+	<%= f.text_field :bed, required: true %>
+	<br />
+	<%= f.label :bath, placeholder: '# of Bathrooms' %>
+	<%= f.text_field :bath, required: true %>
+	<br />
+	<%= f.label :sqft, placeholder: 'Home Square Footage' %>
+	<%= f.text_field :sqft, required: true %>
+	<br />
+	<%= f.label :price, placeholder: 'Home Price' %>
+	<%= f.number_field :price, required: true %>
+	<br />
+	<%= f.check_box :sold %>
+	<%= f.label :sold %>
+	<br />
+	<%= f.check_box :like %>
+	<%= f.label :like %>
+	<br />
+	<%= f.submit %>
+
+<% end %>
